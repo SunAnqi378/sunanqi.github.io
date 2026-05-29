@@ -53,10 +53,13 @@ Watch demo
 - Automatically shows the correct solution step by step.
 
 Difficulty
+Difficulty:
 - Easy: 3 discs
-- Medium: 4 discs
-- Challenge: 5 discs
-
+- Simple: 4 discs
+- Medium: 5 discs
+- Tricky: 6 discs
+- Hard: 7 discs
+- Challenge: 8 discs
 Mouse or touch controls:
 
 1. Pick up the top disc with your mouse or finger.
@@ -363,6 +366,7 @@ The game uses modern browser features, including:
 
 It should work in current versions of Chrome, Edge, Firefox, and Safari.
 
+8.When using 8 discs, the automatic demo takes longer because the minimum solution requires 255 moves.
 
 ========================================
 9. HOW TO RUN

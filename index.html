@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tower of Hanoi for Kids</title>
+  <link rel="stylesheet" href="./style.css?v=4" />
+</head>
+
+<body>
+  <main class="app">
+    <header class="site-header">
+      <div class="badge">Play it like building blocks</div>
+      <h1>Tower of Hanoi Game</h1>
+      <p class="subtitle">
+        Use your mouse or finger to pick up the top disc, drag it to another pole,
+        and let go. The disc will snap into place.
+      </p>
+    </header>
+
+    <section class="panel">
+      <div id="message" class="message normal">
+        Drag the top disc and move all the discs to the right!
+      </div>
+
+      <div class="controls">
+        <button id="resetBtn" type="button">Start again</button>
+        <button id="undoBtn" type="button">Undo</button>
+        <button id="hintBtn" type="button">Hint</button>
+        <button id="soundBtn" type="button">Sound: Off</button>
+        <button id="autoBtn" class="primary" type="button">Watch demo</button>
+
+        <label class="level-label" for="level">
+          Difficulty:
+          <select id="level">
+            <option value="3">Easy: 3 discs</option>
+            <option value="4">Simple: 4 discs</option>
+            <option value="5" selected>Medium: 5 discs</option>
+            <option value="6">Tricky: 6 discs</option>
+            <option value="7">Hard: 7 discs</option>
+            <option value="8">Challenge: 8 discs</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="stats">
+        <div id="moveInfo" class="stat">You have made 0 moves. Keep going!</div>
+        <div id="minInfo" class="stat">Minimum: 31 moves</div>
+      </div>
+    </section>
+
+    <section class="game-shell">
+      <div id="board" class="board" aria-label="Tower of Hanoi game board">
+        <div class="base"></div>
+
+        <div class="drop-zone" data-peg="A" aria-label="Pole A"></div>
+        <div class="drop-zone" data-peg="B" aria-label="Pole B"></div>
+        <div class="drop-zone" data-peg="C" aria-label="Pole C"></div>
+
+        <div class="peg peg-a"></div>
+        <div class="peg peg-b"></div>
+        <div class="peg peg-c"></div>
+
+        <div class="peg-label label-a">A</div>
+        <div class="peg-label label-b">B</div>
+        <div class="peg-label label-c">C</div>
+      </div>
+    </section>
+
+    <section id="winPanel" class="win-panel hidden">
+      <h2>Brilliant!</h2>
+      <p>You completed the Tower of Hanoi!</p>
+      <button id="playAgainBtn" type="button">Play again</button>
+    </section>
+  </main>
+
+  <script src="./script.js?v=4"></script>
+</body>
+</html>
